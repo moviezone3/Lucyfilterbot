@@ -26,7 +26,7 @@ USERNAME = environ.get('USERNAME', 'https://telegram.me/the_user_isbusy')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002369661212'))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002477956053').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://arulanbu0416:4iT4w5Wq6vTPOquw@mzfilestore.wo10s.mongodb.net/?retryWrites=true&w=majority&appName=Mzfilestore")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://moviezoneoffl3:Movie@zone03@filterbotmz.ixdtn.mongodb.net/?retryWrites=true&w=majority&appName=FilterbotMz")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://moviezoneoffl3:Movie@zone03filterbotmz.ixdtn.mongodb.net/?retryWrites=true&w=majority&appName=FilterbotMz")
 DATABASE_NAME = environ.get('DATABASE_NAME', "arulanbu0416")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegramfiles')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002256758936'))
