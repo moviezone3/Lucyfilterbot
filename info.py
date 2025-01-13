@@ -25,17 +25,17 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 USERNAME = environ.get('USERNAME', 'https://telegram.me/the_user_isbusy')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002369661212'))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002477956053').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://arulanbu0416:4iT4w5Wq6vTPOquw@mzfilestore.wo10s.mongodb.net/?retryWrites=true&w=majority&appName=Mzfilestore")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://moviezoneoffl3:Moviezone03@filterbotmz.ixdtn.mongodb.net/?retryWrites=true&w=majority&appName=FilterbotMz")
-DATABASE_NAME = environ.get('DATABASE_NAME', "arulanbu0416")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegramfiles')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002256758936'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', 'n'))
-URL = environ.get('URL', '0')
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002307231237'))
+URL = environ.get('URL', 'https://t.me/+NSBO4UYuxX5mODk1')
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
